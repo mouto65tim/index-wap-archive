@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 简明导航与访问参考</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f8f5f0;
+            color: #2c2b28;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 780px;
+            width: 100%;
+            background: #fcfaf7;
+            padding: 2.8rem 2.4rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.04);
+        }
+        .hero-quote {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #3a3732;
+            border-left: 4px solid #b7a48c;
+            padding-left: 1.3rem;
+            margin-bottom: 1.8rem;
+            line-height: 1.4;
+            font-style: normal;
+        }
+        .hero-quote small {
+            display: block;
+            font-size: 1rem;
+            color: #7d756b;
+            margin-top: 0.6rem;
+            font-weight: 300;
+        }
+        .intro-text {
+            font-size: 1rem;
+            margin-bottom: 2.2rem;
+            color: #3e3b36;
+        }
+        .intro-text p {
+            margin-bottom: 1.2rem;
+        }
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0 2.5rem 0;
+        }
+        .feature-item {
+            background: #f3efe8;
+            padding: 1rem 1.4rem;
+            border-radius: 14px;
+            border-left: 6px solid #9b8b79;
+            transition: background 0.15s;
+        }
+        .feature-item strong {
+            display: block;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+            color: #36322c;
+        }
+        .feature-item span {
+            font-size: 0.94rem;
+            color: #555048;
+        }
+        .tip-block {
+            background: #ede8e0;
+            padding: 1.2rem 1.6rem;
+            border-radius: 16px;
+            margin: 2rem 0 1.8rem 0;
+            border: 1px solid #dcd3c8;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+            font-size: 0.95rem;
+        }
+        .tip-block .label {
+            font-weight: 600;
+            color: #5f5345;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            display: inline-block;
+            border-bottom: 1px dashed #b9aa98;
+            padding-bottom: 2px;
+            margin-bottom: 0.4rem;
+        }
+        .faq-mini {
+            margin: 2rem 0 1.2rem 0;
+            border-top: 1px solid #e2d9ce;
+            padding-top: 1.2rem;
+        }
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+            font-size: 0.94rem;
+        }
+        .faq-mini summary {
+            cursor: pointer;
+            font-weight: 500;
+            color: #3b3730;
+            padding: 0.2rem 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .faq-mini summary::before {
+            content: "▸";
+            display: inline-block;
+            margin-right: 0.5rem;
+            color: #9b8b79;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+        .faq-mini details[open] summary::before {
+            transform: rotate(90deg);
+        }
+        .faq-mini .answer {
+            padding-left: 1.5rem;
+            color: #5a544b;
+            margin-top: 0.25rem;
+        }
+        .closing {
+            margin-top: 2.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2d9ce;
+            font-size: 0.95rem;
+            color: #4d4841;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+        .closing a {
+            color: #6a5c4b;
+            text-decoration: none;
+            border-bottom: 1px solid #c9bbab;
+            font-weight: 450;
+        }
+        .closing a:hover {
+            color: #3b3228;
+            border-bottom-color: #7f6d58;
+        }
+        .foot-note {
+            font-size: 0.8rem;
+            color: #8a8074;
+            margin-top: 1rem;
+            text-align: right;
+        }
+        @media (max-width: 520px) {
+            body { padding: 1.2rem 0.8rem; }
+            .container { padding: 1.8rem 1.2rem; }
+            .hero-quote { font-size: 1.35rem; }
+            .feature-grid { gap: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- 开场短句：简明引导 -->
+    <div class="hero-quote">
+        访问前，先确认方向。
+        <small>一次简短的场景梳理与使用备忘</small>
+    </div>
+
+    <!-- 承接段落：从指南和提醒角度切入 -->
+    <div class="intro-text">
+        <p>如果你正在寻找一个内容聚合与信息浏览的起点，<a href="https://newsapp-igame.com">爱游戏</a> 所提供的界面和分类逻辑，或许能帮你节省不少筛选时间。和常见的资讯平台不同，它的首页结构更侧重“频道直达”——将游戏、科技、生活等栏目平铺在可见区域，减少深层跳转。</p>
+        <p>以下内容基于日常使用提炼出几条简要观察，适合新用户快速建立预期，也适合老用户对照检查自己的操作习惯。</p>
+    </div>
+
+    <!-- 特点列表（简明指南式） -->
+    <div class="feature-grid">
+        <div class="feature-item">
+            <strong>栏目栏位固定，减少记忆负担</strong>
+            <span>顶部导航长期保留主要分类，不会随推荐算法频繁变动。切换频道只需一次点击，适合习惯按板块浏览的用户。</span>
+        </div>
+        <div class="feature-item">
+            <strong>文章标题与摘要同时展示</strong>
+            <span>列表页默认显示标题+两行摘要，方便快速判断内容是否相关。部分卡片还附带发布时间与来源标签。</span>
+        </div>
+        <div class="feature-item">
+            <strong>搜索入口位于右上角</strong>
+            <span>搜索框较小但始终固定，支持关键词匹配标题。对于需要查找特定历史文章的场景，建议直接使用搜索而非滚动浏览。</span>
+        </div>
+    </div>
+
+    <!-- 引用块 / 提示框（访问提醒） -->
+    <div class="tip-block">
+        <div class="label">⏺ 访问提醒</div>
+        <ul style="list-style: none; padding: 0; margin: 0.2rem 0 0 0;">
+            <li style="margin-bottom: 0.4rem;">• 部分外部链接会在新标签页打开，留意浏览器标签变化。</li>
+            <li style="margin-bottom: 0.4rem;">• 页面没有自动刷新机制，长时停留后请手动刷新获取最新内容。</li>
+            <li style="margin-bottom: 0;">• 移动端适配良好，但横屏阅读时部分卡片布局可能偏移。</li>
+        </ul>
+    </div>
+
+    <!-- FAQ 摘要（常见疑问快速解答） -->
+    <div class="faq-mini">
+        <details>
+            <summary>需要注册才能阅读全文吗？</summary>
+            <div class="answer">不需要注册。绝大多数文章可以直接浏览全文，无需登录或下载应用。</div>
+        </details>
+        <details>
+            <summary>历史文章保留多久？</summary>
+            <div class="answer">通常保留近三个月的文章，更早的内容建议通过搜索或外部存档查找。</div>
+        </details>
+        <details>
+            <summary>评论或互动功能在哪里？</summary>
+            <div class="answer">目前部分文章底部设有评论区，但并非所有栏目都开放。可以留意页面最下方是否显示“写留言”区域。</div>
+        </details>
+    </div>
+
+    <!-- 温和结尾，包含合规链接文本 -->
+    <div class="closing">
+        <span>如果你尚未尝试，可以随时通过 <a href="https://newsapp-igame.com">爱游戏</a> 开始浏览，界面直观，无需额外配置。</span>
+        <span class="foot-note">页面 v1 · 简洁参考</span>
+    </div>
+
+</div>
+</body>
+</html>
