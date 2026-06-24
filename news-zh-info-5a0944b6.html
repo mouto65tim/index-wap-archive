@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 简明指南与访问提醒</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f2f4f6;
+      color: #2d3436;
+      line-height: 1.6;
+      padding: 2rem 1.5rem;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    /* -- hero -- */
+    .hero {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 3rem 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      border: 1px solid #e9ecef;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.01em;
+      color: #1e272e;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .sub {
+      font-size: 1.05rem;
+      color: #576574;
+      max-width: 680px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero .tagline {
+      display: inline-block;
+      background: #e8edf0;
+      padding: 0.25rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      color: #3b4a56;
+      border: 1px solid #dde2e6;
+    }
+
+    /* -- 卡片通用 -- */
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      border: 1px solid #e4e8ec;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.015);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: 520;
+      color: #1e272e;
+      margin-bottom: 1rem;
+      border-left: 4px solid #8395a7;
+      padding-left: 1rem;
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+      color: #3b4a56;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+    }
+
+    .grid-item {
+      background: #fafbfc;
+      border-radius: 18px;
+      padding: 1.5rem 1.6rem;
+      border: 1px solid #e4e8ec;
+    }
+
+    .grid-item h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #2d3436;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid-item p {
+      font-size: 0.95rem;
+      color: #4a5b68;
+      margin-bottom: 0;
+    }
+
+    /* -- FAQ 摘要 -- */
+    .faq-item {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #edf0f3;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 480;
+      color: #1e272e;
+      margin-bottom: 0.25rem;
+    }
+
+    .faq-a {
+      color: #576574;
+      font-size: 0.95rem;
+    }
+
+    /* -- 底部 -- */
+    .footer-links {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce1e6;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem 2rem;
+      font-size: 0.95rem;
+      color: #6a7a88;
+    }
+
+    .footer-links a {
+      color: #3a4b5c;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .footer-links a:hover {
+      border-bottom-color: #576574;
+    }
+
+    .notice {
+      background: #f8f9fa;
+      border-radius: 18px;
+      padding: 1.4rem 2rem;
+      margin-bottom: 2rem;
+      border: 1px solid #e4e8ec;
+      color: #3b4a56;
+      font-size: 0.95rem;
+    }
+
+    .notice strong {
+      font-weight: 500;
+      color: #1e272e;
+    }
+
+    /* -- 响应式 -- */
+    @media (max-width: 760px) {
+      body {
+        padding: 1.2rem 1rem;
+      }
+
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .card {
+        padding: 1.6rem 1.2rem;
+      }
+
+      .card h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero .sub {
+        font-size: 1rem;
+      }
+
+      .grid-item {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>爱游戏 · 访问指南</h1>
+    <div class="sub">
+      如果你是第一次接触「爱游戏」、或者希望快速确认最新可用地址，这里有一份简明的提醒与介绍。
+    </div>
+    <span class="tagline">日常阅读 · 资讯聚合</span>
+  </div>
+
+  <!-- 介绍 + 特点 -->
+  <div class="card">
+    <h2>从资讯到习惯</h2>
+    <p>
+      <a href="https://news-zh-igame.com" style="color:#2d3436;text-decoration:underline;text-underline-offset:3px;">爱游戏</a>
+      是一个以中文为主要语言的游戏资讯站点，内容涵盖行业动态、作品评测、开发杂谈和社区话题。
+      它不依赖夸张标题或诱导点击，更倾向于用平实叙述整理游戏圈值得了解的信息。
+    </p>
+    <p>
+      如果你平时会留出几分钟浏览游戏相关新闻，又不希望被算法推送裹挟，爱游戏算是一个节奏舒服的去处。
+      页面结构清晰，不堆砌广告，文章长度也适中。
+    </p>
+  </div>
+
+  <!-- 优势区：简明卡片网格 -->
+  <div class="card">
+    <h2>几个值得留意的特点</h2>
+    <div class="grid-2">
+      <div class="grid-item">
+        <h3>内容分类明确</h3>
+        <p>新闻、评测、专题各有分区，不会把杂谈和快讯混在一起。</p>
+      </div>
+      <div class="grid-item">
+        <h3>更新节奏稳定</h3>
+        <p>基本保持每日更新，但不过度追求数量，每篇都有一定信息量。</p>
+      </div>
+      <div class="grid-item">
+        <h3>直达原文链接</h3>
+        <p>大部分文章会附上来源或参考链接，方便进一步阅读。</p>
+      </div>
+      <div class="grid-item">
+        <h3>没有弹窗干扰</h3>
+        <p>浏览体验比较干净，不会突然弹出登录或推送请求。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 说明区 + 访问提醒 -->
+  <div class="notice">
+    <strong>🔔 访问提醒：</strong>
+    建议将「爱游戏」加入浏览器书签或主页快捷方式，避免因域名变动或临时调整而找不到入口。
+    如果你发现页面加载异常，可稍后再试，或检查网络环境是否正常。不推荐通过未经验证的第三方链接进入。
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="card">
+    <h2>常见疑问 · 摘要</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">爱游戏是否需要注册？</div>
+      <div class="faq-a">不需要。目前浏览所有文章都不需要登录或注册账号。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">内容偏向哪些平台？</div>
+      <div class="faq-a">以 PC、主机游戏为主，也会涉及移动端和独立游戏，覆盖面较广。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">有 RSS 或邮件订阅吗？</div>
+      <div class="faq-a">站点本身未提供明显的订阅功能，但部分文章会同步到社交平台。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">文章可以转载吗？</div>
+      <div class="faq-a">建议先联系站方或查看页面底部的版权说明。通常转载需要注明出处。</div>
+    </div>
+  </div>
+
+  <!-- 底部链接 -->
+  <div class="footer-links">
+    <span><a href="https://news-zh-igame.com">爱游戏</a> · 首页</span>
+    <span>内容来源说明</span>
+    <span>访问帮助</span>
+    <span>建议与反馈</span>
+  </div>
+
+</div>
+</body>
+</html>
